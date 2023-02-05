@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Ana's Website</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+		/>
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Fjalla+One&family=Lobster&display=swap" rel="stylesheet">
+		<style>
+			body {
+				margin: 32px;
+				background-color: seashell;
+			}
+.back{
+	background-color: darkgrey;
+}
+			.cool-font {
+				font-family: Lobster, cursive;
+				font-size: 100px;
+				text-align: center;
+				margin: 0;
+			}
+			.text-white {
+				color: white;
+			}
+			.main-header {
+				margin: -32px;
+				margin-bottom: 32px;
+				padding: 50px;
+				background-image: url("images/IMG_6304.jpg");
+				background-size:cover;
+			}
+			.frame{
+				border: 50px solid pink;
+				border-image: repeating-linear-gradient( 45deg, pink, pink 1%, rgb(210, 108, 125) 3%, rgb(203, 89, 108) 4%, hotpink 5%) 10;
+				border-radius: 20px;
+				margin-bottom: 100px;
+			}
+			.frame2{
+				border: 50px solid pink;
+				border-image: repeating-linear-gradient( 45deg, rgb(136, 190, 199), rgb(78, 163, 167) 1%, rgb(62, 116, 222) 3%, rgb(49, 44, 170) 4%, rgb(60, 141, 188) 5%) 10;
+				border-radius: 20px;
+				margin-bottom: 100px;
+			}
+			.frame3{
+				border: 50px solid pink;
+				border-image: repeating-linear-gradient( 45deg, rgb(235, 231, 177), rgb(234, 246, 126) 1%, rgb(142, 152, 28) 3%, rgb(116, 118, 11) 4%, rgb(216, 172, 68) 5%) 10;
+				border-radius: 20px;
+				margin-bottom: 100px;
+			}
+			.frame4{
+				border: 50px solid pink;
+				border-image: repeating-linear-gradient( 45deg, rgb(201, 177, 235), rgb(200, 121, 218) 1%, rgb(104, 30, 169) 3%, rgb(46, 1, 66) 4%, rgb(168, 42, 153) 5%) 10;
+				border-radius: 20px;
+				margin-bottom: 100px;
+			}
+			.frame5{
+				border: 50px solid pink;
+				border-image: repeating-linear-gradient( 45deg, rgb(186, 235, 177), rgb(89, 180, 76) 1%, rgb(22, 119, 20) 3%, rgb(13, 66, 5) 4%, rgb(22, 155, 112) 5%) 10;
+				border-radius: 20px;
+				margin-bottom: 100px;
+			}
+			.cute-header {
+				background-image: url("images/oie_Nt5DtzwQ18aN.jpg");
+				margin-bottom: 32px;
+				padding: 50px;
+				background-size: cover;
+				padding-bottom: 200px;
+				width: 400px;
+				height:230px ;
+				border-radius: 15%;
+
+			}
+			.cool2-font {
+				font-family:Fjalla One, sans-serif;
+				font-size: 40px;
+			}
+			.cool4-font {
+				font-family:Fjalla One, sans-serif;
+				font-size: 20px;
+				color:darksalmon;
+			}
+			.cool6-font {
+				font-family: Fjalla One, sans-serif;
+				font-size: 29px;
+				text-align: center;
+				background-color: white;
+				width:100%;
+			}
+			.cool3-font {
+				font-family: Courgette, cursive;
+				font-size: 39px;
+			}
+			.cool5-font {
+				font-family: Abril Fatface, cursive;
+				font-size: 25px;
+			}
+			.ja{
+				font-size: 30px;
+				text-align: center;
+			}
+
+			.ana-usa-google-challenge {
+				font-size: 30px;
+			}
+			.uwu{
+				font-size:20px ;
+			}
+
+			.negrita {
+				font-weight: bold;
+			}
+
+			.potato-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 12px;
+			}
+
+			.potato-grid > img,
+			.potato-anim {
+				border-radius: 10px;
+				min-width: 200px;
+				max-width: 440px;
+			}
+
+			.fanarts-grid {
+				display: flex;
+				max-width: 90vw;
+				margin: auto 0;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+
+			.fanarts-grid img {
+				border-radius: 10px;
+			}
+			.fanarts-grid p {
+				text-align: center;
+			}
+			.rust1-grid {
+				display: flex;
+				justify-content: space-around;
+			}
+
+			.rust1-grid img {
+				border-radius: 10px;
+			}
+			.rust1-grid p {
+				text-align: center;
+			}
+			.realistic-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				margin: auto;
+			}
+			.realistic-grid > div {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			.realistic-grid img {
+				border-radius: 10px;
+			}
+			.realistic-grid p {
+				text-align: center;
+			}
+			.rust2-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				margin: auto;
+			}
+			.rust2-grid > div {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			.rust2-grid img {
+				border-radius: 10px;
+			}
+			.rust2-grid p {
+				text-align: center;
+			}
+			.rust3-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				margin: auto;
+			}
+			.rust3-grid > div {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			.rust3-grid img {
+				border-radius: 10px;
+			}
+			.rust3-grid p {
+				text-align: center;
+			}
+			.emoji-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				margin: auto;
+			}
+			.emoji-grid > div {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			.emoji-grid img {
+				border-radius: 10px;
+			}
+			.emoji-grid p {
+				text-align: center;
+			}
+			.digital-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				margin: auto;
+			}
+			.digital-grid > div {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			.digital-grid img {
+				border-radius: 10px;
+			}
+			.lol {
+				color:darksalmon
+			}
+			.digital-grid p {
+				text-align: center;
+			}
+			.draw-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				margin: auto;
+			}
+			.draw-grid > div {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			.draw-grid img {
+				border-radius: 10px;
+			}
+			.draw-grid p {
+				text-align: center;
+			}
+			.google-es-dificil {
+				display: block;
+				margin-top: 50px;
+			}
+			@media (max-width: 1024px) {
+				.fanarts-grid {
+					flex-wrap: wrap;
+				}
+
+				.potato-grid > img {
+					border-radius: 10px;
+					min-width: 50px;
+					max-width: 150px;
+				}
+				.realistic-grid {
+					grid-template-columns: repeat(1, 1fr);
+				}
+				.digital-grid {
+					grid-template-columns: repeat(1, 1fr);
+				}
+				.emoji-grid {
+					grid-template-columns: repeat(1, 1fr);
+				}
+				.draw-grid {
+					grid-template-columns: repeat(1, 1fr);
+				}
+				.rust2-grid {
+					grid-template-columns: repeat(1, 1fr);
+				}
+				.rust3-grid {
+					grid-template-columns: repeat(1, 1fr);
+				}
+				
+
+				.cool6-font {
+					margin-left: 0;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main-header">
+			<h1 class="cool-font text-white">Welcome to the Potato Web!</h1>
+		</div>
+		<h2 class="cool2-font">(Or Ana Rueda's Website)</h2>
+		<p class="ana-usa-google-challenge">
+			<span class="cool3-font">Let me introduce myself 💁🏻:</span> I am an 18
+			year old spanish girl that loves art, music and technology. In this
+			website you will find not only my socials but also projects,
+			portfolio, animations, Potato NFTs and much more! Hope you enjoy💕
+		
+
+		<div class="cute-header">
+			<h3 class="cool3-font"> My socials 👇🏻</h3>
+		
+		<p>
+			<span class="cool5-font">Twitter:</span>
+			<a class="cool4-font" href="https://twitter.com/ruedart">@ruedart </a> 💙
+		</p>
+		<p>
+			<span class="cool5-font">Instagram:</span>
+			<a class="cool4-font" href="https://www.instagram.com/_ruedart/">@_ruedart</a> 💗
+		</p>
+		</p>
+		<p>
+			<p class="uwu"></p><span class="cool5-font">Twitch:</span>
+			<a class="cool4-font" href="https://www.twitch.tv/ruedart">ruedart</a> 💜(Weekly Streams SOON <3)</p>
+		</p>
+	</div>
+		<h3 class="cool3-font google-es-dificil">🥔 Ana's Potato Army 🥔</h3>
+		<p class="ana-usa-google-challenge">
+			This project started making custom pfp pictures for people in Twitter and ended
+			in a cute and original NFT collection inspired
+			by the "Doodles" NFT style. Check them out --->
+			<a class="lol" href="https://opensea.io/collection/potato-but-cute"> HERE!</a>
+			<div>
+			<p class="ana-usa-google-challenge">
+			You can also order your own potato for 0.1 ETH ---> <a class="lol" href="https://potato.anarueda.art"> HERE!</a>
+		</p></div>
+		<p class="ana-usa-google-challenge">
+		Here's some of my favorites👇🏻
+	</p>
+		<div class="potato-grid">
+			<img
+				src="https://lh3.googleusercontent.com/Mc4XxgOahSPeXQqHQfpCCPhvXPDaoScrDmL54WwXAiEr52GWxpzC886APwzzvfFKpcfKIpr7bMg8fbWy7agn-AMy_NWfxQaShLs_Q3U"
+			/>
+			<img
+				src="https://lh3.googleusercontent.com/NC0EQjsUtWMJXocosXOPxeKWHvH8M5SoQYkPNyRCILbGGtEXLXXaPUTIZQ_jUATqCb0pq71TT154H9wVOt4ME-cswRqfcwUyVOuXjA"
+			/>
+			<img
+				src="https://lh3.googleusercontent.com/JDKISkUAsk0WL_Hnb1ySnJc0jXTlSS4IPtB3ILOqmYYJ3SIL5XK7xdByfOGJnM1_ifqKkJt868Ie3veNpBSDIlWJpK4GO1c2TBl3qw"
+			/>
+			<img src="images/thumbnail_IMG_0557-2.png" />
+			<img
+				src="https://lh3.googleusercontent.com/7C3WUKFXW9NWhm1R9beZvP9fT8O6DiGjjRPVavwehV4tUPRv82z4zF0mOownWgJzKx-2bjLOregzfOU5AK40gD0p5DQ6HOF7NVbK8Q"
+			/>
+			<img
+				src="https://lh3.googleusercontent.com/HQcRHVa0SAy32pzlyCRErqdNv_kB4e-HSH-DU5osBzAx145OPnPVTxXmxPyyP19r8BNmZBFue7khw7wqW3dtZ_RrwY5Las45ITvb"
+			/>
+			<img src="images/thumbnail_Untitled_Artwork-2.jpg" />
+			<img src="images/thumbnail_Untitled_Artwork-3.jpg" />
+			<img
+				src="https://lh3.googleusercontent.com/Wkvt55nGgN3nyX8i3PtPrKlCSNK53bNdKaVFC8RMyOOKlWzPA2RIbShTK_F47qm5NoFakrOl08-nXu6v20GPCQxZ5NRWZGMs7VX-Fw"
+			/>
+		</div>
+		<h3 class="cool3-font">🎨 Animations 🎨</h3>
+	    <p class="ana-usa-google-challenge">Currently i only made 2, but there'll be more in the future! 👇</p>
+
+		<div class="anim-grid">
+			<img
+				class="potato-anim"
+				src="images/Untitled_Artwork.gif"
+				width="450"
+				height="450"
+			/>
+			<video
+				width="350"
+				height="450"
+				controls
+				autoplay
+				muted
+				playsinline
+				src="https://ipfs.io/ipfs/bafybeid7hfhtlmgudwoywr5k4xtjy4taz26uwbo6sqm624x3nqajvauufm/bce05f669b5c43279a583888a6ff48d7.mp4"
+			></video>
+		</div>
+
+		<h3 class="cool3-font">📝 Portfolio 📝</h3>
+		<p class="ana-usa-google-challenge">Here's some of my art 👇</p>
+		<div><p class="ana-usa-google-challenge">make sure to visit <a class = "cool4-font" href="https://www.instagram.com/_ruedart/">@_ruedart</a> in instagram for more!💞</p></div>
+		<div class="frame">
+		<h4 class="cool6-font">🎼  Olivia Rodrigo Fanarts (Digital artwork)  🎼</h4>
+		<div class="fanarts-grid">
+			<div>
+				<img src="images/IMG_6302.jpg" width="450" height="400" />
+				<p class="uwu">Based on the song "Drivers License" || August 2021</p>
+			</div>
+			<div>
+				<img src="images/IMG_6292.jpg" width="450" height="400" />
+				<p class="uwu">Based on the song "Good 4 u" || August 2021</p>
+			</div>
+			<div>
+				<img src="images/IMG_6293.jpg" width="350" height="400"/>
+				<p class="uwu">Based on the song "Favorite crime" || August 2021</p>
+			</div>
+			</div>
+		</div>
+		</div>
+		<div class="frame2">
+		<h4 class="cool6-font">🎨  Realistic Drawings and Paintings      🎨</h4>
+		<div class="realistic-grid">
+			<div>
+				<img src="images/IMG_6294.jpg" width="450" height="550" />
+				<p class="uwu">Flowers || May 2020</p>
+			</div>
+			<div>
+				<img src="images/IMG_6281.jpg" width="450" height="400" />
+				<p class="uwu">The Bridge || July 2020</p>
+			</div>
+			<div>
+				<img src="images/IMG_6276.jpg" width="450" height="400" />
+				<p class="uwu">Near the beach || June 2020</p>
+			</div>
+			<div>
+				<img src="images/IMG_6272.jpg" width="450" height="400" />
+				<p class="uwu">Sunset || May 2020</p>
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="frame3">
+		<h4 class="cool6-font">🤩 Emoji Challenge 🤩</h4>
+		<p class="ja">
+			This challenge consisted in making an illustration out of 3 random
+			emojis
+		</p>
+		<div class = "emoji-grid">
+			<div>
+				<img src="images/IMG_6290.jpg" width="400" height="400" />
+				<p class="uwu">👨🏼‍🚒💃🏻🚀 || July 2021</p>
+			</div>
+			<div>
+				<img src="images/IMG_6288.jpg" width="400" height="400" />
+				<p class="uwu">🕯🎠🧨 || June 2021</p>
+			</div>
+			<div>
+				<img src="images/IMG_6287.jpg" width="450" height="400" />
+				<p class="uwu">🦁🍉🤠 || July 2021</p>
+			</div>
+			<div>
+				<img src="images/IMG_6280.jpg" width="400" height="400" />
+				<p class="uwu">👹🧕🏽🍆 || July 2020</p>
+			</div>
+			<div>
+				<img src="images/IMG_6279.jpg" width="400" height="400" />
+				<p class="uwu">🦎🎞🎯 || July 2020</p>
+			</div>
+			<div>
+				<img src="images/IMG_6299.jpg" width="400" height="400" />
+				<p class="uwu">😈🦝💥 || July 2020</p>
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
+	<div class="frame4">
+		<h4 class="cool6-font">📲 Digital Art 📲</h4>
+		<div class="digital-grid">
+			<div>
+				<img src="images/IMG_6286.jpg" width="400" height="400" />
+				<p class="uwu">Sunflower Vol.1. || June 2021</p>
+			</div>
+			<div>
+				<img src="images/IMG_6285.jpg" width="400" height="400" />
+				<p class="uwu">Starlight || May 2021</p>
+			</div>
+			<div>
+				<img src="images/IMG_6284.jpg" width="400" height="400" />
+				<p class="uwu">Light house || May 2021</p>
+			</div>
+			<div>
+				<img src="images/IMG_6283.jpg" width="400" height="400" />
+				<p class="uwu">Save your tears (for another day) || May 2021</p>
+			</div>
+			<div>
+				<img src="images/IMG_6273.jpg" width="400" height="500" />
+				<p class="uwu">Diego || December 2019</p>
+			</div>
+			<div>
+				<img src="images/IMG_6301.jpg" width="300" height="510" />
+				<p class="uwu">Marta || March 2020</p>
+			</div>
+		</div>
+	</div>
+	<div class="frame5">
+		<h4 class="cool6-font">🖌  Drawings and Watercolors  🖋</h4>
+		<div class="draw-grid">
+		<div>
+			<img src="images/IMG_6282.jpg" width="500" height="400" />
+			<p class="uwu">Rainy summer day || August 2020</p>
+		</div>
+		<div>
+			<img src="images/IMG_6277.jpg" width="500" height="400" />
+			<p class="uwu">Hamilton (An American Musical) || July 2020</p>
+		</div>
+		<div>
+			<img src="images/IMG_6295.jpg" width="300" height="500" />
+			<p class="uwu">Get lost! || June 2019</p>
+		</div>
+		<div>
+			<img src="images/IMG_6271.jpg" width="400" height="500" />
+			<p class="uwu">Weird dreams are made of this || March 2020</p>
+		</div>
+		<div>
+			<img src="images/IMG_6270.jpg" width="500" height="400" />
+			<p class="uwu">Do you hear the people sing? (from Les Misérables) || March 2020</p>
+		</div>
+		<div>
+			<img src="images/IMG_6269.jpg" width="500" height="400" />
+			<p class="uwu">El amor es un rayo de luna (based on "Rhymes and Leyends" by Gustavo Adolfo Bécquer) || January 2019</p>
+		</div>
+	</div>
+	</div>
+</div>
+
+</div class="back">
+		<h3 class="cool3-font">🦀 Rust Notes 🦀</h3>
+		<p class="ana-usa-google-challenge">
+			A series of cute notes based on this programming language's book 👇
+			(This is still a work in progress)</p>
+			<h4 class="cool6-font">1️⃣ Chapter 1 1️⃣</h4>
+			<div class="rust1-grid">
+				<div>
+					<img src="images/IMG_0610.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0611.jpg" width="400" height="550" />
+				</div>
+			</div>
+		</div>
+		<h4 class="cool6-font">2️⃣ Chapter 2 2️⃣</h4>
+			<div class="rust2-grid">
+				<div>
+					<img src="images/IMG_0612.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0616.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0613.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0617.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0614.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0618.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0615.jpg" width="400" height="550" />
+				</div>
+			</div>
+			<h4 class="cool6-font">3️⃣ Chapter3 3️⃣</h4>
+			<div class="rust3-grid">
+				<div>
+					<img src="images/IMG_0619.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0623.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0620.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0624.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0621.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0625.jpg" width="400" height="550" />
+				</div>
+				<div>
+					<img src="images/IMG_0622.jpg" width="400" height="250" />
+				</div>
+				<p class="uwu">TO BE CONTINUED...</p>
+			</div>
+		</div>
+	</div>
+
+	</div>
+		</div>
+
+			</div>
+		<h3 class="cool3-font">🌌 Future Goals 🌌</h3>
+		<p class="ana-usa-google-challenge">
+			This September of 2022 I will start my animation career in college!
+			my main goal is to become a professional artist and designer, I will
+			share my work experience and projects here.
+		</p>
+			
+		<p class="ana-usa-google-challenge">Thank you SO MUCH for visiting, if u like make artwork, feel free to make any ETH donations at anarueda.eth or order a potato at potato.anarueda.art 
+			much Love and see u soon <3</p>
+		</p>
+	</body>
+</html>
